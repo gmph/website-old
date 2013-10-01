@@ -8,7 +8,7 @@
 
 <head>
 
-<title>Graham Macphee</title>
+<title>Lorem Ipsum</title>
 <meta name="author" content="Graham Macphee" />
 <meta name="description" content="Graham Macphee, freelance designer. I play with pixels." />
 <meta name="keywords" content="Graham, Macphee, Design, Graphic, Freelance, Hire, HTML, CSS, Web, Website, Writer, gmph, Technology, Android, Internet, Blog, Thinks, Thoughts" />
@@ -47,7 +47,7 @@ body {
 	padding:0;
 	background:#3e4e61;
 	color:#fff;
-	text-shadow:0 2px 0 rgba(0,0,0,.1);
+	text-shadow:0 2px 1px rgba(0,0,0,.2);
 }
 
 div.shadow {
@@ -58,33 +58,64 @@ div.shadow {
 	width:100%;
 	height:60px;
 	background:#3e4e61;
-	z-index:9999;
+	z-index:9997;
 }
 
 div.shadow#top{
 	top:0;
 	left:0;
-	box-shadow: 0 20px 80px 30px #3e4e61;
+	box-shadow: 0 20px 40px 30px #3e4e61;
 }
 
 div.shadow#bottom{
 	bottom:0;
 	right:0;
-	box-shadow: 0 -20px 80px 30px #3e4e61;
+	box-shadow: 0 -20px 40px 30px #3e4e61;
 }
 
-header {
+div.background, div.backgroundtwo {
+	display:block;
+	position:fixed;
+	top:0;
+	left:0;
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	z-index:9998;
+	background:#3e4e61;
+	background-image:url('http://farm8.staticflickr.com/7347/10021104615_3954f553da_k.jpg');
+	background-size:100% auto;
+	background-position: center !important;
+	opacity:.1;
+
+	transition: .5s opacity;
+	-webkit-transition: .5s opacity;
+	-moz-transition: .5s opacity;
+	-o-transition: .5s opacity;
+}
+
+div.backgroundtwo {
+	z-index:1;
+	opacity:.1;
+}
+
+header, footer {
 	display:block;
 	position:fixed;
 	height:120px;
-	width:85%;
+	width:100%;
 	top:50%;
 	left:50%;
-	z-index:1;
-	max-width:400px;
-	margin:-90px 0 0 -200px;
+	z-index:9998;
+	max-width:360px;
+	margin:-90px 0 0 -180px;
 	text-align:center;
 	opacity:0;
+}
+
+h1, h2 {
+	text-shadow:0 2px 1px rgba(0,0,0,.2), 0 0 8px rgba(0,0,0,.5), 0 0 20px rgba(0,0,0,.5);
 }
 
 h1 {
@@ -98,7 +129,6 @@ h2 {
 	font-family:'Open Sans',sans-serif;
 	font-size:20px;
 	font-weight:400;
-	opacity:.6;
 	margin:5px;
 	text-transform:uppercase;
 }
@@ -109,35 +139,69 @@ article {
 	z-index:2;
 	width:90%;
 	max-width:600px;
-	margin:94vh auto 180px auto;
+	margin:94vh auto 800px auto;
 	font-family:'Cambo', serif;
+	color:rgba(255,255,255,1);
 	font-size:21px;
 	line-height:30px;
-	opacity:.9;
 	text-align:justify;
-	background:#3e4e61;
 }
 
 footer {
-	display:block;
-	position:fixed;
-	width:85%;
-	bottom:8px;
-	left:50%;
-	z-index:9999;
-	max-width:400px;
-	margin:0 0 0 -200px;
+	z-index:2;
 	font-family:'Open Sans',sans-serif;
 	text-align:center;
 	opacity:0;
+	margin-top:-80px;
+}
+
+footer p {
+	width:305px;
+	margin: 35px auto 0 auto;
+	font-size:17px;
+	line-height:26px;
+}
+
+a.button {
+	padding:10px 20px 12px 20px;
+	border: solid 1px #fff;
+	border-radius:3px;
+	color:#fff;
+	font-size:26px;
+	font-weight:300;
+}
+
+a.button:hover {
+	background:rgba(255,255,255,.03);
 }
 
 a {
-	color:#222;
+	color:#fff;
 	text-decoration:none;
 }
 
-@media(max-width:1000px){
+@media(max-width:1200px){
+
+	div.background {
+		background-size: auto 100%;
+	}
+
+}
+
+@media(max-width:900px){
+
+	header, footer {
+		max-width:310px;
+		margin:-90px 0 0 -155px;
+	}
+
+	h1 {
+		font-size:36px;
+	}
+
+	h2 {
+		font-size:19px;
+	}
 
 }
 
@@ -157,26 +221,36 @@ a {
 <div class="shadow" id="top"></div>
 <div class="shadow" id="bottom"></div>
 
+<div class="background"></div>
+<div class="backgroundtwo"></div>
+
 <header>
 
-	<h1>Graham Macphee</h1>
-	<h2>Graphic & UI Designer</h2>
+	<h1>Lorem Ipsum</h1>
+	<h2>Dolor sit amet elit</h2>
 
 </header>
 
 <article>
 
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec venenatis eros sit amet odio dapibus ornare. Donec tincidunt fermentum lacus, et pretium erat viverra eu. Ut nulla dui, placerat eu metus sed, bibendum lacinia urna. Donec dapibus nulla orci, eu vestibulum dolor vehicula ac. In hac habitasse platea dictumst. Phasellus non viverra tellus, ac facilisis nulla. Ut vestibulum nibh massa, id faucibus quam placerat ac. Nam ut auctor velit. Maecenas tempus purus eget sem venenatis scelerisque. Vivamus sed consectetur tortor. Nullam mi est, dictum ac lobortis sit amet, cursus in velit. Morbi fermentum accumsan tortor nec tempus. Suspendisse potenti. Fusce ac nibh rhoncus, ultrices libero eu, malesuada lectus.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper gravida ultrices. Maecenas nunc urna, vulputate ut purus sed, sagittis placerat nisl. Sed ante mauris, luctus eget neque a, aliquet congue diam. Duis rhoncus eros quis porttitor venenatis. Suspendisse libero nisl, fringilla et odio eget, consequat condimentum est. Sed eleifend dolor scelerisque orci consequat, vitae porta ipsum sodales. Etiam venenatis cursus ligula vel aliquam. Vivamus gravida ac orci rutrum vulputate. Donec non scelerisque urna. Proin posuere lacus vel leo lacinia, a adipiscing sapien molestie. Mauris vehicula tortor nec massa euismod faucibus.</p>
 
-	<p>Vestibulum eu dolor massa. Integer eget tempus velit. Duis a congue neque. Cras ullamcorper, dolor vitae pretium rutrum, augue lorem tincidunt risus, venenatis adipiscing massa tellus in diam. Nulla porta mollis eros et tempor. Morbi eu sodales orci. Cras eu mauris molestie, interdum nisl non, lacinia mauris. Praesent facilisis tellus a erat posuere hendrerit. Curabitur volutpat enim sed laoreet egestas. Etiam faucibus massa eros, quis pretium eros interdum eu. Praesent massa quam, ornare nec velit non, lacinia dictum erat. Phasellus venenatis hendrerit lacus vitae rutrum. Ut sapien nisl, ultricies dictum molestie nec, tincidunt vel justo. Maecenas id lectus nisl.</p>
+	<p>Praesent vulputate imperdiet scelerisque. Nam at vestibulum ligula. Morbi luctus leo mollis tempor elementum. In ac feugiat ipsum. Quisque iaculis dapibus nibh eget faucibus. Nunc adipiscing lobortis tellus placerat consequat. Integer commodo turpis eu metus scelerisque feugiat. Maecenas dictum velit ut lacus posuere auctor. Proin nec facilisis felis, eu posuere magna. Cras pellentesque, est eu placerat porta, odio eros faucibus lorem, sit amet laoreet nisl tortor quis nunc. In pretium ante lectus. Pellentesque et laoreet odio. In in turpis elit. Aliquam in congue urna. Donec feugiat metus vel felis semper ultrices.</p>
+
+	<p>Vivamus lectus risus, dapibus eget arcu a, bibendum semper mi. Praesent turpis lectus, suscipit eu tellus eget, aliquet bibendum purus. Aliquam accumsan ipsum sed risus condimentum, nec scelerisque magna tempor. Pellentesque et egestas lacus. Fusce laoreet turpis vel fringilla elementum. Curabitur diam ante, feugiat in fringilla eu, luctus eu justo. Curabitur porta nibh eleifend tempor mattis. Quisque varius lacus et eros blandit consequat. Phasellus condimentum, orci eu ullamcorper vulputate, risus lorem placerat sem, quis mattis dui urna eu purus. Mauris rutrum turpis vel commodo aliquet. Sed sodales hendrerit pretium. Quisque non ipsum eros.</p>
+
+	<p>Etiam iaculis fringilla mollis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin pellentesque tristique ligula, eu feugiat diam mattis vitae. Morbi scelerisque, turpis quis tempor commodo, est dolor scelerisque nisi, eget porttitor quam velit quis nunc. Nam turpis diam, viverra a congue a, mattis quis eros. Nulla hendrerit non libero nec ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum nibh magna, a congue enim interdum ut. Aenean vitae sagittis felis.</p>
+
+	<p>Sed at lacus eleifend, varius nisi eget, gravida magna. Maecenas eget tempor arcu, eu vehicula ante. Aliquam erat volutpat. Nullam leo augue, feugiat at consequat et, egestas vitae felis. Donec semper facilisis gravida. Vivamus ac porta eros. Morbi sit amet ipsum egestas, varius ligula eget, rutrum elit. Pellentesque sodales eget urna et varius. Nam auctor sodales leo ac dignissim.</p>
 
 </article>
 
-<!--<footer>
+<footer>
 
-	<p>By <a href="http://twitter.com/gmph">Graham Macphee</a></p>
+	<p><a href="http://twitter.com/gmph" class="button">Follow on Twitter</a></p>
+	<p>Follow me on Twitter for more updates about technology, design and my life.</p>
 
-</footer>-->
+</footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
@@ -242,8 +316,26 @@ $(document).ready(function() {
 $(window).bind("scroll", function() {
     if ($(this).scrollTop() > 75) {
         $("header").css('opacity','0');
+        $("div.background").css('opacity','0');
+        $("div.backgroundtwo").css('opacity','.1');
+        $("article").css('z-index','9998');
+        $("div.shadow").css('z-index','9999');
     } else {
         $("header").css('opacity','1');
+        $("div.background").css('opacity','1');
+        $("div.backgroundtwo").css('opacity','.1');
+        $("article").css('z-index','998');
+        $("div.shadow").css('z-index','999');
+    }
+});
+
+$(window).bind("scroll", function() {
+    if ( $(this).scrollTop() > $(document).height() - 920) {
+        $("footer").css('opacity','1');
+        $("footer").css('z-index','9999');
+    } else {
+        $("footer").css('opacity','0');
+        $("footer").css('z-index','2');
     }
 });
 
