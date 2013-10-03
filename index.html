@@ -8,16 +8,16 @@
 
 <head>
 
-<title>Lorem Ipsum</title>
+<title>Back To Front</title>
 <meta name="author" content="Graham Macphee" />
-<meta name="description" content="Graham Macphee, freelance designer. I play with pixels." />
+<meta name="description" content="Lessons Learnt While Building My First Web App" />
 <meta name="keywords" content="Graham, Macphee, Design, Graphic, Freelance, Hire, HTML, CSS, Web, Website, Writer, gmph, Technology, Android, Internet, Blog, Thinks, Thoughts" />
 <meta charset="utf-8">
 <meta property="og:title" content="Graham Macphee">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{URL}">
-<meta property="og:site_name" content="Graham Macphee">
-<meta property="og:description" content="Graham Macphee, freelance designer. I play with pixels.">
+<meta property="og:site_name" content="Back To Front">
+<meta property="og:description" content="Lessons Learnt While Building My First Web App">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" href="http://static.tumblr.com/ajv5ctq/BXemjq1pa/hamico.png">
 <link href='http://fonts.googleapis.com/css?family=Cambo|Open+Sans:400' rel='stylesheet' type='text/css'>
@@ -45,7 +45,7 @@ body {
 	width:100%;
 	margin:0;
 	padding:0;
-	background:#3e4e61;
+	background:#333;
 	color:#fff;
 	text-shadow:0 2px 1px rgba(0,0,0,.2);
 }
@@ -56,21 +56,21 @@ div.shadow {
 	margin:0;
 	padding:0;
 	width:100%;
-	height:60px;
-	background:#3e4e61;
+	height:20px;
+	background:#333;
 	z-index:9997;
 }
 
 div.shadow#top{
 	top:0;
 	left:0;
-	box-shadow: 0 20px 40px 30px #3e4e61;
+	box-shadow: 0 10px 75px 40px #333;
 }
 
 div.shadow#bottom{
 	bottom:0;
 	right:0;
-	box-shadow: 0 -20px 40px 30px #3e4e61;
+	box-shadow: 0 -10px 75px 40px #333;
 }
 
 div.background, div.backgroundtwo {
@@ -84,10 +84,10 @@ div.background, div.backgroundtwo {
 	height:100%;
 	z-index:9998;
 	background:#3e4e61;
-	background-image:url('http://farm8.staticflickr.com/7347/10021104615_3954f553da_k.jpg');
-	background-size:100% auto;
+	background-image:url('http://farm4.staticflickr.com/3801/10056421184_7882dd1b74_k.jpg');
+	background-size:110% auto;
 	background-position: center !important;
-	opacity:.1;
+	opacity:1;
 
 	transition: .5s opacity;
 	-webkit-transition: .5s opacity;
@@ -111,11 +111,11 @@ header, footer {
 	max-width:360px;
 	margin:-90px 0 0 -180px;
 	text-align:center;
-	opacity:0;
+	opacity:1;
 }
 
 h1, h2 {
-	text-shadow:0 2px 1px rgba(0,0,0,.2), 0 0 8px rgba(0,0,0,.5), 0 0 20px rgba(0,0,0,.5);
+	text-shadow:0 2px 1px rgba(0,0,0,.2), 0 0 8px rgba(0,0,0,.3), 0 0 20px rgba(0,0,0,.3), 0 0 40px rgba(0,0,0,1);
 }
 
 h1 {
@@ -147,11 +147,26 @@ article {
 	text-align:justify;
 }
 
+ul, ol {
+	margin: 20px 0 20px 30px;
+}
+
+blockquote {
+	margin:55px 40px 55px 40px;
+	padding: 50px 0;
+	border-top:solid 1px rgba(255,255,255,.3);
+	border-bottom:solid 1px rgba(255,255,255,.3);
+	text-align:center;
+	font-style:italic;
+	font-size: 24px;
+	line-height:30px;
+	opacity:.9;
+}
+
 footer {
 	z-index:2;
 	font-family:'Open Sans',sans-serif;
 	text-align:center;
-	opacity:0;
 	margin-top:-80px;
 }
 
@@ -257,29 +272,30 @@ a {
 
 <header>
 
-	<h1>Lorem Ipsum</h1>
-	<h2>Dolor sit amet elit</h2>
+	<h1>Back To Front</h1>
+	<h2>Lessons Learnt While Building My First Web App</h2>
 
 </header>
 
 <article>
 
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper gravida ultrices. Maecenas nunc urna, vulputate ut purus sed, sagittis placerat nisl. Sed ante mauris, luctus eget neque a, aliquet congue diam. Duis rhoncus eros quis porttitor venenatis. Suspendisse libero nisl, fringilla et odio eget, consequat condimentum est. Sed eleifend dolor scelerisque orci consequat, vitae porta ipsum sodales. Etiam venenatis cursus ligula vel aliquam. Vivamus gravida ac orci rutrum vulputate. Donec non scelerisque urna. Proin posuere lacus vel leo lacinia, a adipiscing sapien molestie. Mauris vehicula tortor nec massa euismod faucibus.</p>
-
-	<p>Praesent vulputate imperdiet scelerisque. Nam at vestibulum ligula. Morbi luctus leo mollis tempor elementum. In ac feugiat ipsum. Quisque iaculis dapibus nibh eget faucibus. Nunc adipiscing lobortis tellus placerat consequat. Integer commodo turpis eu metus scelerisque feugiat. Maecenas dictum velit ut lacus posuere auctor. Proin nec facilisis felis, eu posuere magna. Cras pellentesque, est eu placerat porta, odio eros faucibus lorem, sit amet laoreet nisl tortor quis nunc. In pretium ante lectus. Pellentesque et laoreet odio. In in turpis elit. Aliquam in congue urna. Donec feugiat metus vel felis semper ultrices.</p>
-
-	<p>Vivamus lectus risus, dapibus eget arcu a, bibendum semper mi. Praesent turpis lectus, suscipit eu tellus eget, aliquet bibendum purus. Aliquam accumsan ipsum sed risus condimentum, nec scelerisque magna tempor. Pellentesque et egestas lacus. Fusce laoreet turpis vel fringilla elementum. Curabitur diam ante, feugiat in fringilla eu, luctus eu justo. Curabitur porta nibh eleifend tempor mattis. Quisque varius lacus et eros blandit consequat. Phasellus condimentum, orci eu ullamcorper vulputate, risus lorem placerat sem, quis mattis dui urna eu purus. Mauris rutrum turpis vel commodo aliquet. Sed sodales hendrerit pretium. Quisque non ipsum eros.</p>
-
-	<p>Etiam iaculis fringilla mollis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin pellentesque tristique ligula, eu feugiat diam mattis vitae. Morbi scelerisque, turpis quis tempor commodo, est dolor scelerisque nisi, eget porttitor quam velit quis nunc. Nam turpis diam, viverra a congue a, mattis quis eros. Nulla hendrerit non libero nec ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vestibulum nibh magna, a congue enim interdum ut. Aenean vitae sagittis felis.</p>
-
-	<p>Sed at lacus eleifend, varius nisi eget, gravida magna. Maecenas eget tempor arcu, eu vehicula ante. Aliquam erat volutpat. Nullam leo augue, feugiat at consequat et, egestas vitae felis. Donec semper facilisis gravida. Vivamus ac porta eros. Morbi sit amet ipsum egestas, varius ligula eget, rutrum elit. Pellentesque sodales eget urna et varius. Nam auctor sodales leo ac dignissim.</p>
-
+	<p>Over the past few weeks, I&#8217;ve been building a little app. Before now I&#8217;ve only ever designed UIs and built simple HTML, CSS, JS websites with no log-in system and no form of stored data. This new one, which I called <a href="http://depiction.co">Depiction.co</a> has both. (Try it out so you have some idea of what I&#8217;m talking about in this post.) It&#8217;s a web app that allows each user to log in with Twitter and save a status update with a colour, which are then written to a database with their Twitter username and some metadata. Each user has a profile page which displays their current status and colour. It&#8217;s simple, and largely useless, but it was a nice first project to convince me that user management and data storage isn&#8217;t as horrific as I first thought.</p>
+	<p>While building Depiction.co, I learnt quite a lot (mostly due to the help Joe gave me). I&#8217;d like to share some of those things with you - it might even convince you that it&#8217;s worth making your own website or app.</p>
+	<p>Because everything I&#8217;ve made until now has been design-centric and not based on any back-end or function which I had to code myself, I took a bottom-up approach to the project. First, I designed the posting page in the browser. It was just a static HTML, CSS website. I made sure each element on the page received as much time as it would if I was only designing the UI with no back-end. This, I think, ensured that the result had at least some focus on design. If I hadn&#8217;t approached it from front-end to back-end, I&#8217;m sure the design wouldn&#8217;t be as good.</p>
+	<p>I then used the little I did know about making dynamic pages and added some JS and jQuery to the page. When the &#8220;Update&#8221; button was clicked, I set a variable to store the value of the textarea and another to store the selected colour by checking the opacity of the element. At this point, I made sure I could send the data wherever I needed to by popping it up in an alert. I didn&#8217;t know how I would send it to a database, or whatever I ended up building, but I had a pretty good idea that this would be a good base for it.</p>
+	<p>When I first looked at how to build the back-end of Depiction, I approached it quite messily, trying to hack together a service that could pull data from different APIs. I began by using a service I&#8217;d heard of a few times, <a href="http://hull.io">Hull.io</a>, to manage user accounts. I used their Identity component (loaded by JavaScript) to allow users to sign in with Twitter, then a registration form to collect the user&#8217;s status and selected colour and Hull&#8217;s service to store the data. Up to this point everything had gone well; I had sacrificed a few things in terms of the UI, but the user&#8217;s data was saving fine.</p>
+	<p>The trouble came when I tried to retrieve the data and display it per user. I am sure it&#8217;s possible to do, but I couldn&#8217;t work out how to use Hull to write the data, even when I looked deeper into their API. I asked a few friends (much more experienced than me) and they couldn&#8217;t work it out either. One of them, Joe, suggested that it would be easier to build my own back-end from scratch using PHP. Seeing no way forward with Hull, I took his advice. Trying to take a shortcut by using Hull had only wasted time, and I hadn&#8217;t learnt anything new by doing it - a lesson I&#8217;ll try to take heed of in the future.</p>
+	<p>For the next hour or so I learnt the basics of PHP and comfortingly found that it was similar to JS. Following a basic tutorial path, I quickly came across POST and GET requests and realised these would likely form a key part of my code. Joe then showed me a useful library, <a href="http://redbeanphp.com/">RedBeanPHP</a>, which can be used to manage databases in PHP. He also wrote a Twitter login PHP file for me and gave me a tonne of advice on fitting everything together and finding bugs.</p>
+	<p>While working on the back-end I noticed a few things about development in general. When testing and making sure things worked, I had no inclination to make sure the design was good. I was fully focussed on getting things to work. This method worked well in that it showed me when things were and weren&#8217;t working with no clutter, but the lack of even basic CSS didn&#8217;t encourage me that the finished site would look good. Prior to building Depiction, if I had seen an app or a website that worked well but suffered from having a bad UI or an illogical UX, I had just assumed that the developers didn&#8217;t know what they were doing. But now I see it&#8217;s not that at all. When you code something it rarely works first time. There are bugs aplenty to find and crush - it takes a great deal of effort to even build the working system that puts content into your design framework. Because of this effort, I found that I felt a real sense of achievement when the code actually worked. The reward now wasn&#8217;t seeing a well designed layout but just the plaintext content on the page.</p>
+	<p>This variation in attitude is the main thing I think keeps designers and developers apart. Designers see content as a part of their design and have to put the system used to fetch it to the back of their mind, thinking only about the user&#8217;s interactions with the interface. Developers have to think in terms of inputs and outputs, hence the design isn&#8217;t their priority, data is. I think there&#8217;s a tremendous value in one understanding what the other has to do and what motivates them. From this simple exercise I feel I have a much better idea of what developers aim to do. Now I know the work that goes in to even the simplest things, like getting a Tweet to display on a screen or a string to save to a database. Of course it&#8217;s this same disparity that makes developers and designers both so essential on a project as well. Each mindset is needed to get the best result, the best of both design and function.</p>
+	<p>So, that&#8217;s what building Depiction taught me - not bad for a tiny web app, I&#8217;d say. By approaching the project in a back to front fashion (front-end before back-end), I learnt that building on what I already know can make new concepts, even entirely new programming languages, seem easier to grasp. Through making the mistake of trying to take a shortcut using Hull, I found that sometimes it&#8217;s more valuable to take the long way round and learn something in the process than try a shortcut and get stuck in the mud. Most importantly, I now know better than before the differences between designers and developers and what drives them - I suspect this will make my approach to design in the future much more compatible with the way devs work. Only time will tell&#8230;</p>
+	<p>If you&#8217;re a developer, I often have clients looking for dev work on their projects, and I almost always have side projects I&#8217;m working on. Shoot me an <a href="mailto:hi@grahammacphee.co.uk">email</a> if you&#8217;re looking for work!</p>
 </article>
 
 <footer>
 
-	<p><a href="http://twitter.com/gmph" class="button">Follow on Twitter</a></p>
-	<p>Follow me on Twitter for more updates about technology, design and my life.</p>
+	<p><a href="http://github.com/gmph/depiction" class="button">Depiction on GitHub</a></p>
+	<p>View the source code and contribute to my little project yourself.</p>
 
 </footer>
 
@@ -344,31 +360,42 @@ $(document).ready(function() {
 //		USED TO FADE HEADER OUT ON SCROLL
 // ############################################
 
-$(window).bind("scroll", function() {
-    if ($(this).scrollTop() > 75) {
-        $("header").css('opacity','0');
-        $("div.background").css('opacity','0');
-        $("div.backgroundtwo").css('opacity','.1');
-        $("article").css('z-index','9998');
-        $("div.shadow").css('z-index','9999');
-    } else {
-        $("header").css('opacity','1');
-        $("div.background").css('opacity','1');
-        $("div.backgroundtwo").css('opacity','.1');
-        $("article").css('z-index','998');
-        $("div.shadow").css('z-index','999');
-    }
-});
+if ($(window).width() > 900) {
 
-$(window).bind("scroll", function() {
-    if ( $(this).scrollTop() > $(document).height() - 920) {
-        $("footer").css('opacity','1');
-        $("footer").css('z-index','9999');
-    } else {
-        $("footer").css('opacity','0');
-        $("footer").css('z-index','2');
-    }
-});
+	$(window).bind("scroll", function() {
+
+	    if ($(this).scrollTop() > 75) {
+	        $("header").css('opacity','0');
+	        $("div.background").css('opacity','0');
+	        $("div.backgroundtwo").css('opacity','.06');
+	        $("article").css('z-index','9998');
+	        $("div.shadow").css('z-index','9999');
+	    } else {
+	        $("header").css('opacity','1');
+	        $("div.background").css('opacity','1');
+	        $("div.backgroundtwo").css('opacity','.1');
+	        $("article").css('z-index','998');
+	        $("div.shadow").css('z-index','999');
+	    }
+	});
+
+	$(window).bind("scroll", function() {
+	    if ( $(this).scrollTop() > $(document).height() - 920) {
+	        $("footer").css('opacity','1');
+	        $("footer").css('z-index','9999');
+	        $("div.backgroundtwo").css('opacity','.6');
+	        $("div.shadow").css('opacity','0');
+	        $("article").css('opacity','0');
+	    } else {
+	        $("footer").css('opacity','0');
+	        $("footer").css('z-index','2');
+	        $("div.backgroundtwo").css('opacity','.06');
+	        $("div.shadow").css('opacity','1');
+	        $("article").css('opacity','.9');
+	    }
+	});
+
+};
 
 </script>
 
